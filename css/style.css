@@ -2,3 +2,25 @@
 .example {
     text-align: center;
 }
+button{
+    background-color: #cda16f;
+    font-weight: bold;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 300px;
+    height: 3em;
+}
+body{
+    background-color: #fce2c4;
+}
+h1{
+    background-color: aliceblue;
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-top: 2px solid#000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+
+    
+}
