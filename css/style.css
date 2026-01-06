@@ -10,12 +10,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 5%;
     background-color: #fff;
     border-bottom: 2px solid #000;
 }
 
-.logo {
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+    border: none;
+}
+
+.logo-text {
     font-weight: bold;
     font-size: 20px;
 }
