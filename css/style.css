@@ -39,6 +39,11 @@ body {
     padding: 0;
 }
 
+.car{
+    font-weight: bold;
+    font-size: large;
+}
+
 .nav li {
     margin-left: 20px;
 }
