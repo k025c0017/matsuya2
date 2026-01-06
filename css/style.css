@@ -64,15 +64,13 @@ p {
     white-space: nowrap;
 }
 
-
-.item .text-top {
+.texttop {
     margin-bottom: 10px;
-    color: #000;
 }
 
-.item .text-bottom {
+.textbottom {
     margin-top: 10px;
-    color: #ff0000 !important;
+    color: #ff0000;
 }
 
 .item img {
