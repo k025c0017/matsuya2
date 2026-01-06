@@ -35,14 +35,14 @@ h1 {
     text-align: center;
 }
 
-p{
+p {
     line-height: 3;
 }
 
 .wrapper.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px 20px; 
+    gap: 20px; 
     max-width: 1200px;
     margin: 20px auto;
 }
@@ -50,49 +50,50 @@ p{
 .item {
     box-sizing: border-box; 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-}
-
-.item span {
-    display: block;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 0 20px; 
-    box-sizing: border-box;
-}
-b{
-    font-weight: bold;
-}
-
-.item .text-top {
-    margin-bottom: 10px;
-}
-
-.item .text-bottom {
-    margin-top: 10px;
-    color: red;
+    padding: 5px;
+    overflow: hidden;
 }
 
 .item img {
-    max-width: 100%; 
-    height: auto;
-    object-fit: contain; 
-    margin: 0; 
-    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: cover; 
+    flex-shrink: 0;
     border: 2px solid #000;
-    padding: 5px;
     background-color: #fff;
+    padding: 2px;
 }
 
-@media (max-width: 768px) {
+.item span {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px; 
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.item .text-top {
+    color: #000;
+}
+
+.item span.text-bottom {
+    color: #ff0000 !important;
+}
+
+b {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
     .wrapper.grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     .wrapper.grid {
         grid-template-columns: 1fr;
     }
