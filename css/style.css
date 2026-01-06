@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .example img {
-    display: block; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
@@ -15,7 +15,7 @@ button {
     padding-right: 5em;
     width: 400px;
     height: 5em;
-    display: block; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,58 +42,59 @@ p {
 .wrapper.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
+    gap: 30px 20px;
     max-width: 1200px;
     margin: 20px auto;
 }
 
 .item {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 5px;
-    overflow: hidden;
-}
-
-.item img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover; 
-    flex-shrink: 0;
-    border: 2px solid #000;
-    background-color: #fff;
-    padding: 2px;
 }
 
 .item span {
+    display: block;
     font-weight: bold;
-    font-size: 20px;
-    padding: 0 10px; 
+    font-size: 24px;
+    padding: 0 20px;
+    box-sizing: border-box;
     white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.item .text-top {
-    color: #000;
-}
-
-.item span.text-bottom {
-    color: #ff0000 !important;
 }
 
 b {
     font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+.item .text-top {
+    margin-bottom: 10px;
+}
+
+.item span.text-bottom {
+    margin-top: 10px;
+    color: #ff0000;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    display: block;
+    border: 2px solid #000;
+    padding: 5px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
     .wrapper.grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 480px) {
     .wrapper.grid {
         grid-template-columns: 1fr;
     }
