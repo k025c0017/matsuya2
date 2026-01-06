@@ -68,11 +68,11 @@ b {
     font-weight: bold;
 }
 
-.item .text-top {
+.text-top {
     margin-bottom: 10px;
 }
 
-.item span.text-bottom {
+.text-bottom {
     margin-top: 10px;
     color: #ff0000;
 }
