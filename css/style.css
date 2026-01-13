@@ -24,7 +24,6 @@ body {
     height: 50px;
     width: auto;
     margin-right: 15px;
-    border: none;
 }
 
 .logo-text {
@@ -37,11 +36,6 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.car{
-    font-weight: bold;
-    font-size: large;
 }
 
 .nav li {
@@ -59,42 +53,6 @@ body {
     color: #cda16f;
 }
 
-.example img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-}
-.example{
-    font-size: large;
-    font-weight: bold;
-}
-
-/* おしゃれなボタンの指定 */
-.btn-fancy {
-    background-color: #f39c12; /* 松屋らしいオレンジ */
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 80px;
-    margin: 0 auto;
-    border-radius: 40px; /* 丸みをつける */
-    box-shadow: 0 6px 0 #d38300; /* 立体的な影 */
-    transition: all 0.2s;
-    border: none;
-}
-
-.btn-fancy:hover {
-    transform: translateY(3px); /* 少し沈む */
-    box-shadow: 0 3px 0 #d38300; /* 影を薄くして押した感を出す */
-    background-color: #e67e22;
-}
-
 h1 {
     background-color: aliceblue;
     padding: 10px 0px;
@@ -103,10 +61,6 @@ h1 {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     text-align: center;
-}
-
-p {
-    line-height: 3;
 }
 
 .wrapper.grid {
@@ -121,42 +75,43 @@ p {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.item span {
-    display: block;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    white-space: nowrap;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
 }
 
 .texttop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    font-weight: bold;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-.textbottom {
-    margin-top: 10px;
-    color: #ff0000;
+.img-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
 }
 
 .item img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin: 0;
-    display: block;
-    border: 2px solid #000;
-    padding: 5px;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.car img {
-    display: block;
-    margin: 20px auto;
+.textbottom {
+    margin-top: 15px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
