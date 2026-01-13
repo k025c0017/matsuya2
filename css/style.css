@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: #fdfaf5;
+    background-color: #fce2c4;
     color: #333;
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background-color: #ffffff;
+    background-color: #b0c4de;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
