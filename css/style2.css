@@ -1,18 +1,15 @@
 @charset "UTF-8";
 
-body {
-    background-color: #fce2c4;
-    text-align: center;
-    margin: 0;
-}
-
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 15px 5%;
     background-color: #b0c4de;
-    border-bottom: 2px solid #000;
+    border-bottom: 4px solid #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-area {
@@ -21,15 +18,17 @@ body {
 }
 
 .logo-img {
-    height: 50px;
+    height: 45px;
     width: auto;
-    margin-right: 15px;
-    border: none;
+    margin-right: 10px;
+    border: 3px solid #000;
+    background: #fff;
 }
 
 .logo-text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.4rem;
+    color: #000;
 }
 
 .nav ul {
@@ -37,11 +36,6 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.car{
-    font-weight: bold;
-    font-size: large;
 }
 
 .nav li {
@@ -52,121 +46,23 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
 .nav a:hover {
-    color: #cda16f;
+    color: #f39c12;
 }
 
-.example img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-}
-.example{
-    font-size: large;
-    font-weight: bold;
-}
-
-/* おしゃれなボタンの指定 */
-.btn-fancy {
-    background-color: #f39c12; /* 松屋らしいオレンジ */
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 80px;
-    margin: 0 auto;
-    border-radius: 40px; /* 丸みをつける */
-    box-shadow: 0 6px 0 #d38300; /* 立体的な影 */
-    transition: all 0.2s;
-    border: none;
-}
-
-.btn-fancy:hover {
-    transform: translateY(3px); /* 少し沈む */
-    box-shadow: 0 3px 0 #d38300; /* 影を薄くして押した感を出す */
-    background-color: #e67e22;
-}
-
-h1 {
-    background-color: aliceblue;
-    padding: 10px 0px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    text-align: center;
-}
-
-p {
-    line-height: 3;
-}
-
-.wrapper.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.item {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.item span {
-    display: block;
-    font-weight: bold;
-    font-size: 24px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    white-space: nowrap;
-}
-
-.texttop {
-    margin-bottom: 10px;
-}
-
-.textbottom {
-    margin-top: 10px;
-    color: #ff0000;
-}
-
-.item img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin: 0;
-    display: block;
-    border: 2px solid #000;
-    padding: 5px;
-    background-color: #fff;
-}
-
-.car img {
-    display: block;
-    margin: 20px auto;
-}
-
-@media (max-width: 768px) {
-    .wrapper.grid {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        padding: 10px;
     }
-}
-
-@media (max-width: 480px) {
-    .wrapper.grid {
-        grid-template-columns: 1fr;
+    .logo-area {
+        margin-bottom: 10px;
+    }
+    .nav li {
+        margin: 5px 10px;
     }
 }
