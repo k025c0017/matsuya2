@@ -142,6 +142,11 @@ p {
     background-color: #fff;
 }
 
+.car img {
+    display: block;
+    margin: 20px auto;
+}
+
 @media (max-width: 768px) {
     .wrapper.grid {
         grid-template-columns: repeat(2, 1fr);
